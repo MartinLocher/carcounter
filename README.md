@@ -3,7 +3,7 @@
 This code merges the Espressif ULP example (ULP Pulse Counting) with LoraWan functionality and is ported to Arduino.
 The intention of the project is is to count cars in an arbitrary parking lot, sending the counted number via LoraWan to a node red backend where it is processed in mysql and visualized on a dashboard in order to help employees to look for parking areas which free space instead of driving arround for nothing.
 
-The lora nodes (based on the TTGO T-Beam ESP32 implementation) are positioned in the entry as well as in the exit lane of an parking area. A sonar sensor is attached to the node is detecting objects and raises a positive signal on an IO port of the ESP32.  
+The lora nodes (based on the TTGO T-Beam ESP32 implementation) are positioned in the entry lane as well as in the exit lane of an parking area. A sonar sensor is attached to the node is detecting objects and raises a positive signal on an IO port of the ESP32.  
 
 In order to save battery most of the time the lora node is in deepsleep and only the ULP portion is still active and counting the positive signalds.
 
