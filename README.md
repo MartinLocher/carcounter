@@ -6,9 +6,10 @@ The intention of the project is is to count cars in an arbitrary parking lot, se
 
 The lora nodes (based on the TTGO T-Beam ESP32 implementation) are positioned in the entry lane as well as in the exit lane of an parking area. A sonar sensor is attached to the node is detecting objects and raises a positive signal on an IO port of the ESP32.  
 
-In order to save battery most of the time the lora node is in deepsleep and only the ULP portion is still active and counting the positive signalds.
+In order to save battery most of the time the lora node is in deepsleep and only the ULP portion is still active and counting the positive signals.
 
-Once the lora node wakes up it checks if there were car counted in its sleeptime and then transmits this numbers via LoraWan.
+Once the lora node wakes up it checks if there were actually car counted in its sleeptime and then transmits this numbers via LoraWan.
+
 The beauty of ULP is also that as the transactions on the counter are atomic there is no need for serialization. The counter is counting while the main thread is sending data via LoraWan out of the box !
 
 The application is at run time configurable by pushing down a byte stream from TTN. 
