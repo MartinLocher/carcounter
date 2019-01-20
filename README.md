@@ -1,6 +1,6 @@
-#ESP Car Counter in ULP
+# ESP Car Counter in ULP
 
-This code merges the ULP example (ULP Pulse Counting) with LoraWan functionalit$
+This code merges the ULP example (ULP Pulse Counting) with LoraWan functionality $
 Its intention is to count cars in an arbitrary parking lot by counting pulses o$
 A sonar sensor is attached to the esp32 and is pulsing whenever the barrier det$
 
