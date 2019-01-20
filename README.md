@@ -4,6 +4,8 @@ This code merges the Espressif ULP Pulse Counting example with LoraWan functiona
 
 The intention of the project is is to count cars in an arbitrary parking lot, sending the counted number via LoraWan to a node red backend where it is processed in mysql and visualized on a dashboard. Very important is that the dashboard is accesible  on a mobile phone also in order to help employees to look for parking areas with free space instead of driving arround for nothing in the early morning wasting natural ressources and stressing them unnecessarily.
 
+Depending on the location per entry lane and exit lane one LoraNode is needed. Per Node typically we are in the range of arround 50 €. A low cost LoraGateway below 200 €. AWS ressources will end up 10 € per month. So we are talking about a one time invest of 100 € per parking area and 200 € for the gateway with a reoccuring cost of 10 € per month. 
+
 The lora nodes (based on the TTGO T-Beam ESP32 implementation) are positioned in the entry lane as well as in the exit lane of an parking area. A sonar sensor is attached to the node is detecting objects and raises a positive signal on an IO port of the ESP32.  
 
 In order to save battery most of the time the lora node is in deepsleep and only the ULP portion is still active and counting the positive signals.
