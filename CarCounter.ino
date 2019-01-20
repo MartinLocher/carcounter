@@ -166,7 +166,7 @@ RTC_DATA_ATTR int boot_count = 0;
 RTC_DATA_ATTR int sf  = 10;
 #define SECS_PER_MIN  60
 
-static  int deep_sleep_sec = 10; //60 * 5; // Sleep every five minutes
+RTC_DATA_ATTR  int deep_sleep_sec = 10; //60 * 5; // Sleep every five minutes
 
 const unsigned LINGER_TIME = 5000;
 
