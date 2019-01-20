@@ -24,4 +24,4 @@ Thus a downlink like 0A 05 00 will set the spreading factor to 10, the sleep tim
 In order to compile the assembler files you need to follow this tutorial https://github.com/duff2013/arduino_ulp 
 which is working like a charme and will propeller the ESP into another level. Thanks for that duff !
 
-Depending on the location per entry lane and exit lane one LoraNode is needed. Per node typically we are in the range of arround 50 €. A low cost LoraGateway below 200 €. AWS ressources will end up 10 € per month. So we are talking about a one time invest of 100 € per parking area and 200 € for the gateway with a reoccuring cost of 10 € per month.
+Depending on the location per entry lane and exit lane one LoraNode is needed. Per node typically we are in the range of arround 50 €. A low cost LoraGateway is well below 200 €. AWS ressources will end up max. 10 € per month. So we are talking about a one time invest of 100 € per parking area and 200 € for the gateway with a reoccuring cost of 10 € per month.
